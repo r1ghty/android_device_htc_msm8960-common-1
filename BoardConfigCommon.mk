@@ -48,6 +48,9 @@ TARGET_CPU_VARIANT := krait
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# Speed profile services and wifi-service to reduce RAM and storage.
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := true
